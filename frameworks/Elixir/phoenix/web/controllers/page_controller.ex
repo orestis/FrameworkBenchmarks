@@ -10,8 +10,10 @@ defmodule Hello.PageController do
 
   # avoid namespace collision
   def _json(conn, _params) do
+    msg = %{message: "Hello, world"}
     conn
-    |> json(%{message: "Hello, world!"})
+    |> put_resp_content_type("application/json")
+    |> send_resp(200, :jiffy.encode(msg))
   end
 
   def db(conn, _params) do

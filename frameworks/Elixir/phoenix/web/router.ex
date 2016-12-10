@@ -7,10 +7,10 @@ defmodule Hello.Router do
   scope "/", Hello do
     pipe_through :bare
     get "/plaintext", PageController, :plaintext
+    get "/json", PageController, :_json
   end
 
   scope "/", Hello do
-    get "/json", PageController, :_json
     get "/db", PageController, :db
     get "/queries", PageController, :queries
     get "/fortune", PageController, :fortunes
