@@ -12,7 +12,7 @@ config :hello, Hello.Repo,
   password: "benchmarkdbpass",
   database: "techempower_benchmarks",
   hostname: "localhost",
-  pool_size: 20
+  pool_size: 256
 
 # ## SSL Support
 #
