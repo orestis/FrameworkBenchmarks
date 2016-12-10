@@ -26,7 +26,7 @@ config :hello, Hello.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "benchmarkdbuser",
   password: "benchmarkdbpass",
-  database: "hello_world",
+  database: "techempower_benchmarks",
   hostname: "localhost"
 
 # Do not include metadata nor timestamps in development logs

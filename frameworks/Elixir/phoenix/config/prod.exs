@@ -10,7 +10,7 @@ config :hello, Hello.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "benchmarkdbuser",
   password: "benchmarkdbpass",
-  database: "hello_world",
+  database: "techempower_benchmarks",
   hostname: "localhost",
   pool_size: 20
 
